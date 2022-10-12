@@ -1,0 +1,8 @@
+version=4
+# A typical upstream tag looks like v1_7_0 (which should be 1.7.0 in Debian),
+# but if they releaes a luarocks-specific update then it looks like v1_7_0_2
+# (which should be 1.7.0-2 in Debian). uscan can't handle this on its own, so
+# just turn all _ to . and manually fix things later.
+opts="filenamemangle=s%(?:.*?)?v?(\d[-._\d]*)\.tar\.gz%lua-filesystem-$1.tar.gz%, pgpmode=none, uversionmangle=s/_/./g" \
+    https://github.com/keplerproject/luafilesystem/tags \
+    (?:.*?/)?v?(\d[-._\d]*)\.tar\.gz

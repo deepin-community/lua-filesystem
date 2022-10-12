@@ -1,0 +1,178 @@
+lua-filesystem (1.8.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+    + Lua 5.4 support
+  * Declare compliance with Policy 4.5.0, no changes needed
+
+ -- James McCoy <jamessan@debian.org>  Tue, 01 Sep 2020 23:19:07 -0400
+
+lua-filesystem (1.7.0-2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * d/copyright: Switch to copyright-format 1.0
+  * Refresh 0001-fix-MAXPATHLEN-on-hurd.patch
+  * Point Vcs-* to Salsa
+  * Bump up to debhelper compat 11
+  * Set Rules-Requires-Root to no
+  * Declare compliance with Policy 4.4.1, no changes needed
+  * Add standard dh-lua based autopkgtest
+
+ -- James McCoy <jamessan@debian.org>  Mon, 28 Oct 2019 22:25:10 -0400
+
+lua-filesystem (1.6.3-1) unstable; urgency=medium
+
+  * New upstream release with 5.3 support
+  * use ${misc:Pre-Depends}
+  * Remove transitional packages leftover
+  * Build-Depend on dh-lua >= 21 to pull in Lua 5.3
+  * Bump Standards-Version, no change
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Fri, 14 Aug 2015 22:07:16 +0200
+
+lua-filesystem (1.6.2-3) unstable; urgency=medium
+
+  * Rebuild against Lua 5.1.5-7 (Closes: #723489)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 30 Aug 2014 21:54:51 +0200
+
+lua-filesystem (1.6.2-2) unstable; urgency=medium
+
+  * Path to fix FTBFS on hurd (thanks Svante Signell) (Closes: #758890)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun, 24 Aug 2014 11:23:40 +0200
+
+lua-filesystem (1.6.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Removing transitional packages
+  * Packaging moved to git
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 28 Apr 2012 12:03:05 +0200
+
+lua-filesystem (1.5.0+16+g84f1af5-1) unstable; urgency=low
+
+  * New upstream snapshot including:
+    -  the lua5.2 patch, now removed from debian/patches
+    -  the "permissions" patch, now removed from debian/patches
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 28 Apr 2012 11:57:22 +0200
+
+lua-filesystem (1.5.0+15+g149e0fb-1) experimental; urgency=low
+
+  * Upstream snapshot supporting lua 5.2
+  * Moved from cdbs to dh + dh-lua
+  * debian/compat to 8
+  * Bumped standards-version to 3.9.3, no changes needed
+  * Packages renamed according to new lua policy
+  * Removed debian/patch/umask, applied upstream
+  * New patch debian/patch/lua5.2.patch to fix last remaining
+    glitches for lua5.2
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun, 08 Apr 2012 17:38:47 +0200
+
+lua-filesystem (1.5.0-2) unstable; urgency=low
+
+  * Multi-Arch compliant (build-depends lua5.1-policy >= 32, dh >= 8.1.3)
+  * Bumped standards-version to 3.9.2, no changes needed
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Wed, 20 Jul 2011 21:55:04 +0200
+
+lua-filesystem (1.5.0-1) unstable; urgency=low
+
+  * new upstream release (backward compatible)
+  * fixed watch file
+  * updated homepage URL
+  * source format 3.0 (quilt)
+  * standards-version 3.9.0
+  * added patch for luatex (Closes: #605270)
+  * updated copyright (years)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Thu, 17 Feb 2011 19:11:38 +0100
+
+lua-filesystem (1.4.2-3) unstable; urgency=low
+
+  * added umask.dpatch, taken from the upstream (Closes: #562627)
+  * removed unused patches
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Mon, 01 Feb 2010 17:09:15 +0100
+
+lua-filesystem (1.4.2-2) unstable; urgency=low
+
+  * bumped standards-version to 3.8.2, no changes needed
+  * build-depend on lua5.1-policy-dev >= 22
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Tue, 21 Jul 2009 15:32:30 +0200
+
+lua-filesystem (1.4.2-1) unstable; urgency=low
+
+  * new upstream bugfix release
+  * standards-version bumped to 3.8.1
+  * lua -> Lua in packages description
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Mon, 23 Mar 2009 11:16:58 +0100
+
+lua-filesystem (1.4.1-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Fri, 09 May 2008 10:55:32 +0200
+
+lua-filesystem (1.4.1~rc1-1) unstable; urgency=low
+
+  * new upstream release candidate
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 19 Apr 2008 15:24:33 +0200
+
+lua-filesystem (1.4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Bumped standards-version to 3.7.3, no changes needed
+  * Added Vcs-Browser
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Thu, 14 Feb 2008 10:06:29 +0100
+
+lua-filesystem (1.3.0-1) unstable; urgency=low
+
+  * New upstream release, no API change since only one function has been added
+    a none removed/changed.
+  * Renamed cdbs deprecated variable.
+  * Added Homepage filed in control file and removed custom homepage metadata
+    in packages description.
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sat, 27 Oct 2007 13:29:24 +0200
+
+lua-filesystem (1.2.1-1) unstable; urgency=low
+
+  * Moved to policy 10 that fixes the clean target (Closes: #424553)
+  * New upstream release
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Wed, 16 May 2007 18:20:11 +0200
+
+lua-filesystem (1.2-4) unstable; urgency=low
+
+  * made control file binNMU safe
+  * Added a note about the documentation shipped within the -dev package
+    in the control file
+  * Added call to lua5.1-policy-apple --reverse in hook clean::
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Fri, 13 Oct 2006 13:31:52 +0200
+
+lua-filesystem (1.2-3) unstable; urgency=low
+
+  * added XS-X-Vcs-svn to control file.
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun, 10 Sep 2006 14:44:31 +0200
+
+lua-filesystem (1.2-2) unstable; urgency=low
+
+  * Fixed a typo in control file.
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Sun, 10 Sep 2006 14:29:45 +0200
+
+lua-filesystem (1.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #384496)
+
+ -- Enrico Tassi <gareuselesinge@debian.org>  Thu, 24 Aug 2006 17:34:29 +0200
